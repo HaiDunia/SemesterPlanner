@@ -1,1 +1,121 @@
 <//empty file!>
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Semester Planner</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="SemesSCS.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+    <body>
+	
+	<div class="topheader">
+		<h1 class="Title" tabindex="-1" style="display:inline;">
+		<span role="button" class="Title_button_text" tabindex="0">Calendar</span>
+		</h1>
+		
+		
+		<input type="text" id="myText" value="#FFFFFF">
+		<button class="button buttonColor" onclick="changeColor(this,pickColor())"></button>
+		</---'#'+Math.floor(Math.random()*16777215).toString(16)>
+		
+		<button class="EditBtn">Edit</button>
+		<button class="AddBtn">Add</button>
+		<button class="DeleteBtn">Delete</button>
+	</div> 
+	
+	
+	
+	<div class="container">
+	
+			<div class="month">
+				<ul>
+					<li class="Back">&#10094</li>
+					<li class="Next">&#10095</li>
+					<li>March<br><span style="font-size:18px">2018</span></li>
+				</ul>
+					
+			</div>
+			
+			<div class="MonthView" style="display:block;">
+				<ul class="weekNames">
+					<li>SUN</li>
+					<li>MON</li>
+					<li>TUE</li>
+					<li>WED</li>
+					<li>THU</li>
+					<li>FRI</li>
+					<li>SAT</li>
+				</ul>
+			</div>
+			
+			<div class="DayRow" style="display:block;">
+				<table>
+					<tbody>
+						<tr>
+							<td><div class="day">25</div></td>
+							<td><div class="day">26</div></td>
+							<td><div class="day">27</div></td>
+							<td><div class="day">28</div></td>
+							<td><div class="day">1</div></td>
+							<td><div class="day">2</div></td>
+							<td><div class="day">3</div></td>
+						</tr>
+						
+						<tr>
+							<td><div class="day">4</div></td>
+							<td><div class="day">5</div></td>
+							<td><div class="day">6</div></td>
+							<td><div class="day">7</div></td>
+							<td><div class="day">8</div></td>
+							<td><div class="day">9</div></td>
+							<td><div class="day">10</div></td>
+						</tr>
+						
+						<tr>
+							<td><div class="day">11</div></td>
+							<td><div class="day">12</div></td>
+							<td><div class="day">13</div></td>
+							<td><div class="day">14</div></td>
+							<td><div class="day">15</div></td>
+							<td><div class="day">16</div></td>
+							<td><div class="day">17</div></td>
+						</tr>
+
+						<tr>
+							<td><div class="day">18</div></td>
+							<td><div class="day">19</div></td>
+							<td><div class="day">20</div></td>
+							<td><div class="day">21</div></td>
+							<td><div class="day">22</div></td>
+							<td><div class="day">23</div></td>
+							<td><div class="day">24</div></td>
+						</tr>
+
+						<tr>
+							<td><div class="day">25</div></td>
+							<td><div class="day">26</div></td>
+							<td><div class="day">27</div></td>
+							<td><div class="day">28</div></td>
+							<td><div class="day">29</div></td>
+							<td><div class="day">30</div></td>
+							<td><div class="day">31</div></td>
+						</tr>						
+					</tbody>
+				</table>
+				
+			</div> 
+	</div>
+			
+	<script src="ColorChanger.js"></script>			
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
