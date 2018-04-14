@@ -9,6 +9,12 @@ body{
 	padding: 70px;
 }
 
+.cal-container{
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
 .EditBtn{
 	horizon-align: middle;
 	position: relative;
