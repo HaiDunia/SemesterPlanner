@@ -1,5 +1,9 @@
 #recomend repl.it
-#1.2
+#1.3
+#update notes:
+#this verison provides for the ability to print only the weeks that contain the days for the current month.
+
+
 #hides tables by default
 import datetime
 idNum = 0
@@ -25,27 +29,38 @@ for i in range(0,12):
     endOfMonth = months[currentMonth-1]
   newMonth = months[currentMonth]
   dayOfMonthH = endOfMonth - (datetime.date(2018, currentMonth+1, 1).isoweekday()-1)
-
+  lastWeek = False
   count = -1
   print("        <tr>")
   
   for indexs in range(0,42):
     if(count == 6):
       print("      </tr>")
-      print("      <tr>")
-      count = 0
+      if(lastWeek):
+        break
+      else:
+        print("      <tr>")
+        count = 0
+      
     else:
       count +=1
     sindexs = str(indexs)
     sid = str(idNum)
+    modifiedDate = dayOfMonthH-endOfMonth
     if(dayOfMonthH >endOfMonth):
-      modifiedDate = dayOfMonthH-endOfMonth
       if(modifiedDate>newMonth):
         dayOfMonth= modifiedDate - newMonth
       else:
         dayOfMonth= modifiedDate
     else:
       dayOfMonth= dayOfMonthH
+      
+    #preventing the extra week to be printed
+    if(modifiedDate>=newMonth):
+      lastWeek = True
+    else:
+      lastWeek = False
+      
     #using a+= to get rid of the space before the inputed numbers
     a= ("        <td onclick=\"colorPrompt(this,")
     a+=sid
@@ -64,4 +79,7 @@ for i in range(0,12):
   print("</div>")
   print("")
   print("")
-  idNum+=-14
+  if(lastWeek):
+    idNum+=-7
+  else:
+    idNum+=-14
