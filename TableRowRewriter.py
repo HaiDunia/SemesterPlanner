@@ -1,5 +1,5 @@
 #recomend repl.it
-#1.4
+#1.5
 #update notes:
 #this version changes the tables to have a class assciated with the month.
 
@@ -10,7 +10,7 @@ idNum = 0
 monthsNames= ["January","February","March","April","May","June","July","August","September","October","November","December"]
 for i in range(0,12):
   monthStr=("<div class=\"")
-  monthStr+=monthsNames[i]
+  monthStr+=("MonthTables")
   monthStr+=("\">")
   print(monthStr)
   print("  <table>")
