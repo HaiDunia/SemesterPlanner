@@ -1,3 +1,4 @@
+//1.2 added line break (line 22)
 function changeColor(elmnt,clr) {
     elmnt.style.backgroundColor = clr;
 }
@@ -18,7 +19,7 @@ function colorPrompt(elmnt, id) {
         
     } else {
         txt = data;
-		 document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + " " + txt;
+		 document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + " " + txt + "<br/>";
     }
     
 }
