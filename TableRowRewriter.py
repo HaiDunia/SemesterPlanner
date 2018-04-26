@@ -1,14 +1,18 @@
 #recomend repl.it
-#1.3
+#1.4
 #update notes:
-#this verison provides for the ability to print only the weeks that contain the days for the current month.
+#this version changes the tables to have a class assciated with the month.
 
 
 #hides tables by default
 import datetime
 idNum = 0
+monthsNames= ["January","February","March","April","May","June","July","August","September","October","November","December"]
 for i in range(0,12):
-  print("<div class=\"DayRow\" style=\"display:none;\">")
+  monthStr=("<div class=\"")
+  monthStr+=monthsNames[i]
+  monthStr+=("\">")
+  print(monthStr)
   print("  <table>")
   print("    <tbody>")
   print("      <tr>")
@@ -22,6 +26,8 @@ for i in range(0,12):
     months= [31,29,31,30,31,30,31,31,30,31,30,31]
   else:
     months= [31,28,31,30,31,30,31,31,30,31,30,31]
+  
+  
   
   if(currentMonth == 0):
     endOfMonth = months[11]
