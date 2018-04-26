@@ -1,3 +1,4 @@
+//1.2
 function changeColor(elmnt,clr) {
     elmnt.style.backgroundColor = clr;
 }
