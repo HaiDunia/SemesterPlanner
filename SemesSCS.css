@@ -75,7 +75,10 @@ body{
 	color: white;
 	text-align: center;
 }
+header{
+	font-size:30px;
 
+}
 table {
 	border: 1px solid black;
 	background-color: #FFFFF;
@@ -94,7 +97,7 @@ tr {
 }
 
 td {
-	border: 4px groove #999;
+	border: 1px groove #999;
 	height: 7em;
 	width: 20em;
 	padding: 5px;
@@ -118,4 +121,47 @@ td {
 
 td:hover{
 	background-color: #809fff;
+}
+.hiddenNum{
+display:none;
+}
+
+.DayRow{
+display:none;
+}
+.January{
+display:none;
+}
+.February{
+display:none;
+}
+.March{
+display:none;
+}
+.April{
+display:none;
+}
+.May{
+display:none;
+}
+.June{
+display:none;
+}
+.July{
+display:none;
+}
+.August{
+display:none;
+}
+.September{
+display:none;
+}
+.October{
+display:none;
+}
+.November{
+display:none;
+}
+.December{
+display:none;
 }
